@@ -5,6 +5,7 @@
   "logo": "https://pbs.twimg.com/profile_images/2497960292/image.jpg",
   "keywords": ["natural language"],
   "image": "heroku/python",
+  "stack": "heroku-22",
   "env": {
     "SECRET_KEY": {
       "description": "Your bot token",
