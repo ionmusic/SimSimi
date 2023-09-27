@@ -11,24 +11,24 @@ def convbot(msgtext, LN=cfg.LN):
 	except:
 		return random.choice(cfg.ErroApiSimSimi)
 def RespTG(**args):
-	respTG = dict()
+	respTG = {}
 	__locals__ = locals()['args']
-	if not ("method" in __locals__):
+	if "method" not in __locals__:
 		respTG['method'] = 'sendMessage'
 	else:
 		respTG['method'] = __locals__['method']
 		__locals__.pop('method')
-	if not ("text" in __locals__):
+	if "text" not in __locals__:
 		respTG['text'] = random.choice(cfg.ErroApiSimSimi)
 	else:
 		respTG['text'] = __locals__['text']
 		__locals__.pop('text')
-	if not ("chat_id" in __locals__):
+	if "chat_id" not in __locals__:
 		respTG['chat_id'] = cfg.Sudo_ID
 	else:
 		respTG['chat_id'] = __locals__['chat_id']
 		__locals__.pop('chat_id')
-	if not ("parse_mode" in __locals__):
+	if "parse_mode" not in __locals__:
 		respTG['parse_mode'] = 'HTML'
 	else:
 		respTG['parse_mode'] = __locals__['parse_mode']
